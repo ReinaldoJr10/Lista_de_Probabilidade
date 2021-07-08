@@ -50,5 +50,5 @@ QuatroAses <- function(vetor){
   if(sum(cartas == "A") == 4){
     return(TRUE)
   }
-
-  
+  return(FALSE)
+}
