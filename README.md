@@ -34,4 +34,21 @@ MaoComAs<-function(vetor){
   str_contains(vetor,"A")
 }
 ```
+## 7.6
+```{r funcao.mesmo.naipe}
+MesmoNaipe <- function(vetor){
+  naipes <- substring(vetor, 2, 2)
+  resp <- all(naipes == naipes[1])
+  return(resp)
+}
+```
 
+## 7.7
+```{r funcao.quatro.ases}
+QuatroAses <- function(vetor){
+  cartas <- substring(vetor, 1, 1)
+  if(sum(cartas == "A") == 4){
+    return(TRUE)
+  }
+
+  
